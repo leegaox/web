@@ -22,6 +22,8 @@
     </properties>
 
     <dependencies>
+
+        <!--加入该依赖，会包含SpringMVC框架，默认内嵌Tomcat容器-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

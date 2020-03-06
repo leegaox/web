@@ -18,7 +18,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Application {
 
     public static void main(String[] args) {
-        // 启动嵌入式的 Tomcat 并初始化 Spring 环境及其各 Spring 组件
+        // spring boot执行流程的主方法，启动嵌入式的 Tomcat 并初始化 Spring 环境及其各 Spring 组件
         SpringApplication.run(Application.class, args);
     }
 

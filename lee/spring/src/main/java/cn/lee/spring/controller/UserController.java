@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
-//该注解是 @Controller 和 @ResponseBody 注解的合体版，默认类中的方法都会以json的格式返回。
+//该注解是 @Controller 和 @ResponseBody 注解的合体版，默认类中的方法返回值都会以json的格式写进响应体中。
 @RestController
 @RequestMapping(value = "/api/user/")
 public class UserController extends BaseController {
@@ -33,7 +33,7 @@ public class UserController extends BaseController {
      * @return
      */
     //接口路径配置
-    @RequestMapping(value ="getInfo",method = RequestMethod.GET)
+    @GetMapping(value ="getInfo")
     public Result getAllUser(){
         // 首先判断缓存中是否有数据
         List<User> users = (List<User>) redisTemplate.boundValueOps("lee:springboot:users").get();
@@ -73,7 +73,8 @@ public class UserController extends BaseController {
      * 增加User
      * @param user
      */
-    @RequestMapping(value = "addUser",method = RequestMethod.POST)
+    //RequestParam获取请求体中的参数
+    @PostMapping(value = "addUser")
     public Result addUser(@RequestParam(value = "user", required = true) User user){
         if(userMapper.addUser(user)){
             return genSuccessResult(true);
@@ -112,5 +113,7 @@ public class UserController extends BaseController {
             return genErrorResult(-1,"");
         }
     }
+
+
 
 }

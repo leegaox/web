@@ -6,7 +6,28 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c1b4066-6104-4e8d-a61f-b746a42cf391" name="Default Changelist" comment="" />
+    <list default="true" id="4c1b4066-6104-4e8d-a61f-b746a42cf391" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/config/MyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/config/MyConfig2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/config/MyProp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/controller/OtherController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/test/java/cn/lee/spring/MockEnvTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/test/java/cn/lee/spring/MockTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/test/java/cn/lee/spring/UserControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/test/java/cn/lee/spring/UserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/lee_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/lee_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/lee_war_exploded/WEB-INF/views/hello.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/lee_war_exploded/WEB-INF/views/hello.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/test/java/cn/lee/spring/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/test/java/cn/lee/spring/ApplicationTests.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,15 +49,19 @@
         <option value="Jsp File" />
         <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
-    <option name="CUSTOM_FILTER" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
+    <option name="CUSTOM_FILTER" value="" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -46,28 +71,33 @@
     </option>
   </component>
   <component name="ProjectId" id="1T0SZs6HQZnyPOlGJUdIN45Tcou" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring/src/main/webapp/WEB-INF/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.lee.spring" />
       <recent name="cn.lee.spring.mapper" />
       <recent name="cn.lee.spring.service.impl" />
       <recent name="cn.lee.spring.service" />
       <recent name="cn.lee.spring.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Gx\workspace\web\lee\web\WEB-INF" />
       <recent name="D:\Gx\workspace\web\lee\spring\src\main\webapp\WEB-INF\views" />
       <recent name="D:\Gx\workspace\web\lee\spring\src\main\java\cn\lee\spring\util" />
     </key>
@@ -85,6 +115,51 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="MockEnvTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RestService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.lee.spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.lee.spring" />
+      <option name="MAIN_CLASS_NAME" value="cn.lee.spring.MockEnvTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RestService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.lee.spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.lee.spring" />
+      <option name="MAIN_CLASS_NAME" value="cn.lee.spring.MockTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RestService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.lee.spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.lee.spring" />
+      <option name="MAIN_CLASS_NAME" value="cn.lee.spring.UserControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="RestService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.lee.spring.Application" />
@@ -164,8 +239,8 @@
         </option>
       </method>
     </configuration>
-    <configuration name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.47" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.jsp" />
+    <configuration name="form.html" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.47" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:80/WEB-INF/form.html" />
       <deployment>
         <artifact name="lee:war exploded">
           <settings>
@@ -174,7 +249,46 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="index_jsp_lee" />
+        <option name="BASE_DIRECTORY_NAME" value="form_html_lee" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="lee:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="upload.html" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.47" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:80/WEB-INF/upload.html" />
+      <deployment>
+        <artifact name="lee:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/lee_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="upload_html_lee" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -205,7 +319,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Tomcat Server.index.jsp" />
+        <item itemvalue="Tomcat Server.upload.html" />
+        <item itemvalue="Tomcat Server.form.html" />
+        <item itemvalue="JUnit.MockTest" />
+        <item itemvalue="JUnit.UserControllerTest" />
+        <item itemvalue="JUnit.MockEnvTest" />
       </list>
     </recent_temporary>
   </component>
@@ -226,20 +344,48 @@
       <workItem from="1572933793253" duration="1327000" />
       <workItem from="1572938629194" duration="7930000" />
       <workItem from="1573004770201" duration="20370000" />
-      <workItem from="1573088035424" duration="1030000" />
+      <workItem from="1573088035424" duration="1990000" />
+      <workItem from="1573611019623" duration="3029000" />
+      <workItem from="1573672473873" duration="2568000" />
+      <workItem from="1574125779389" duration="737000" />
+      <workItem from="1575006544891" duration="3287000" />
+      <workItem from="1575522894848" duration="147000" />
+      <workItem from="1576647151603" duration="1961000" />
+      <workItem from="1583313254783" duration="76000" />
+      <workItem from="1583313400650" duration="3434000" />
+      <workItem from="1583373542182" duration="21867000" />
+      <workItem from="1583459931033" duration="1201000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/controller/UserController.java</url>
-          <line>91</line>
+          <line>92</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring/src/test/java/cn/lee/spring/MockTest.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

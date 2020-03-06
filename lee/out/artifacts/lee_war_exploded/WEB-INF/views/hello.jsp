@@ -3,7 +3,7 @@
   User: 80787
   Date: 2019/11/5
   Time: 11:12
-  To change this template use File | Settings | File Templates.
+    关于 404，使用 spring-boot:run
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
