@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: eureka-service-invoke
+
+server:
+  port: 9000
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+
+feign:
+  hystrix:
+    enabled: true

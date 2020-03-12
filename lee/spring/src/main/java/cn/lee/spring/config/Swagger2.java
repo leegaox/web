@@ -23,7 +23,7 @@ public class Swagger2 {
                 .apiInfo(apiInfo())
                 .pathMapping("/")
                 .select()
-                 //设置basePackage会将包下的所有被@Api标记类的所有方法作为api
+                //设置basePackage会将包下的所有被@Api标记类的所有方法作为api
                 .apis(RequestHandlerSelectors.basePackage("cn.lee.spring.controller"))
                 .paths(PathSelectors.any())
                 .build();

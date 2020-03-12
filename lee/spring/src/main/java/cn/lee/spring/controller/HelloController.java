@@ -13,7 +13,7 @@ import java.util.Date;
 public class HelloController {
 
     @RequestMapping("/hello")
-    public String hello(Model m){
+    public String hello(Model m) {
         m.addAttribute("now", DateFormat.getDateTimeInstance().format(new Date()));
         return "hello";
     }

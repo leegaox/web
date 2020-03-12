@@ -17,6 +17,7 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
     @Autowired
     private RedisTemplate redisTemplate;
+
     @Override
     public User getUserInfo() {
         User user = new User();

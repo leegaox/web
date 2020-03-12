@@ -34,95 +34,94 @@ public class UserController extends BaseController {
 
     /**
      * 查询所有用户
+     *
      * @return
      */
     //接口路径配置
-    @GetMapping(value ="getInfo")
+    @GetMapping(value = "getInfo")
     @ApiOperation(value = "获取用户列表")
-    public Result getAllUser(){
+    public Result getAllUser() {
         // 首先判断缓存中是否有数据
         List<User> users = (List<User>) redisTemplate.boundValueOps("lee:springboot:users").get();
-        logger.debug ("users: "+GsonUtil.toJson(users));
-        System.out.println("users: "+GsonUtil.toJson(users));
-        if(users==null){
+        logger.debug("users: " + GsonUtil.toJson(users));
+        System.out.println("users: " + GsonUtil.toJson(users));
+        if (users == null) {
             System.out.println("read users from db...");
             //从数据库中查询
-            users =userMapper.getAllUser();
+            users = userMapper.getAllUser();
             //放入缓存
             redisTemplate.boundValueOps("lee:springboot:users").set(users);
         }
-//        Result result =new Result();
-//        result.setKey(200);
-//        result.setMessage("hot reload");
-//        result.setResult(users);
-        return  genSuccessResult(users);
+        return genSuccessResult(users);
     }
 
     /**
      * 根据id查询
+     *
      * @param id
      * @return
      */
     @GetMapping(value = "find/{id}")
     @ApiOperation(value = "根据id查找用户")
-    public Result findUserById(@PathVariable Integer id){
+    public Result findUserById(@PathVariable Integer id) {
         User user = userMapper.findUserById(id);
-        if(user!=null)
-        {
+        if (user != null) {
             return genSuccessResult(user);
-        }else{
-            return genErrorResult(-1,"");
+        } else {
+            return genErrorResult(-1, "");
         }
     }
 
     /**
      * 增加User
+     *
      * @param user
      */
     //RequestParam获取请求体中的参数
     @PostMapping(value = "addUser")
     @ApiOperation(value = "添加新用户")
-    public Result addUser(@RequestParam(value = "user", required = true) User user){
-        if(userMapper.addUser(user)){
+    public Result addUser(@RequestParam(value = "user", required = true) User user) {
+        if (userMapper.addUser(user)) {
             return genSuccessResult(true);
-        }else{
-            return genErrorResult(-1,"");
+        } else {
+            return genErrorResult(-1, "");
         }
     }
 
     /**
      * 更新
+     *
      * @param user
      */
-    @PostMapping(value = "update",produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "update")
     @ResponseBody
     @ApiOperation(value = "更新用户信息")
-    public Result updateUser(@RequestBody @Valid User user , BindingResult bindingResult){
-        if(bindingResult.hasErrors()){
-            return genErrorResult(-1,bindingResult.getFieldError().getDefaultMessage());
+    public Result updateUser(@RequestBody @Valid User user, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
+            return genErrorResult(-1, bindingResult.getFieldError().getDefaultMessage());
         }
-      if(userMapper.updateUser(user)){
-        return genSuccessResult(true);
-      }else{
-        return genErrorResult(-1,"");
-      }
+        if (userMapper.updateUser(user)) {
+            return genSuccessResult(true);
+        } else {
+            return genErrorResult(-1, "");
+        }
 
     }
 
     /**
      * 刪除
+     *
      * @param id
      */
     @GetMapping("delete/{id}")
     @ApiOperation(value = "删除用户")
-    public Result deleteUser(@PathVariable(value = "id",required = true) Integer id){
-        if(userMapper.deleteUserById(id)){
+    public Result deleteUser(@PathVariable(value = "id", required = true) Integer id) {
+        if (userMapper.deleteUserById(id)) {
             return genSuccessResult(true);
-        }else{
-            return genErrorResult(-1,"");
+        } else {
+            return genErrorResult(-1, "");
         }
     }
-
 
 
 }

@@ -7,26 +7,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c1b4066-6104-4e8d-a61f-b746a42cf391" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/config/MyConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/config/MyConfig2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/config/MyProp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/controller/OtherController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring/src/test/java/cn/lee/spring/MockEnvTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring/src/test/java/cn/lee/spring/MockTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring/src/test/java/cn/lee/spring/UserControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring/src/test/java/cn/lee/spring/UserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/upload.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/lee_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/lee_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/RestService_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/RestService_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/webapp/WEB-INF/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/webapp/WEB-INF/upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_9_0_27.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lee_war_exploded/WEB-INF/views/hello.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/lee_war_exploded/WEB-INF/views/hello.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/controller/StudentController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/test/java/cn/lee/spring/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/test/java/cn/lee/spring/ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/mapper/StudentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/pojo/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +47,20 @@
   <component name="CoverageViewManager">
     <option name="myElementSize" value="204" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="lee" />
   </component>
@@ -48,8 +69,8 @@
       <list>
         <option value="Jsp File" />
         <option value="spring-beans.schema" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -81,7 +102,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -97,6 +118,7 @@
       <recent name="cn.lee.spring.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Gx\workspace\web\lee\spring\src\main\webapp\WEB-INF" />
       <recent name="D:\Gx\workspace\web\lee\web\WEB-INF" />
       <recent name="D:\Gx\workspace\web\lee\spring\src\main\webapp\WEB-INF\views" />
       <recent name="D:\Gx\workspace\web\lee\spring\src\main\java\cn\lee\spring\util" />
@@ -354,8 +376,29 @@
       <workItem from="1583313254783" duration="76000" />
       <workItem from="1583313400650" duration="3434000" />
       <workItem from="1583373542182" duration="21867000" />
-      <workItem from="1583459931033" duration="1201000" />
+      <workItem from="1583459931033" duration="14338000" />
+      <workItem from="1583714727330" duration="1862000" />
+      <workItem from="1583718717516" duration="3375000" />
+      <workItem from="1583722270317" duration="281000" />
+      <workItem from="1583735866945" duration="4554000" />
+      <workItem from="1583802280415" duration="4377000" />
+      <workItem from="1583830990742" duration="42000" />
     </task>
+    <task id="LOCAL-00001" summary="模拟post 上传文件；熟悉单元测试web组件和业务组件">
+      <created>1583463368960</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583463368961</updated>
+    </task>
+    <task id="LOCAL-00002" summary="集成Swagger2">
+      <created>1583471884540</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583471884540</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,18 +417,33 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="模拟post 上传文件；熟悉单元测试web组件和业务组件" />
+    <MESSAGE value="集成Swagger2" />
+    <option name="LAST_COMMIT_MESSAGE" value="集成Swagger2" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/controller/UserController.java</url>
-          <line>92</line>
+          <line>96</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/spring/src/test/java/cn/lee/spring/MockTest.java</url>
           <line>44</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/controller/UserController.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/controller/UserController.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

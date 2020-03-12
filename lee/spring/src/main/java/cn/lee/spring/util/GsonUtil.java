@@ -28,12 +28,13 @@ public class GsonUtil {
 
     /**
      * 基本数据类型解析
-     *    int i = gson.fromJson("100", int.class);              //100
-     *    double d = gson.fromJson("\"99.99\"", double.class);  //99.99
-     *    boolean b = gson.fromJson("true", boolean.class);     // true
-     *    String str = gson.fromJson("String", String.class);   // String
-     *    String jsonString = "{\"name\":\"怪盗kidou\",\"age\":24}";
-     *    User user = gson.fromJson(jsonString, User.class);POJO类的生成
+     * int i = gson.fromJson("100", int.class);              //100
+     * double d = gson.fromJson("\"99.99\"", double.class);  //99.99
+     * boolean b = gson.fromJson("true", boolean.class);     // true
+     * String str = gson.fromJson("String", String.class);   // String
+     * String jsonString = "{\"name\":\"怪盗kidou\",\"age\":24}";
+     * User user = gson.fromJson(jsonString, User.class);POJO类的生成
+     *
      * @param json
      * @param clz
      * @param <T>
@@ -50,14 +51,15 @@ public class GsonUtil {
     }
 
     /**
-     *  eg.
-     *   Type userType = new TypeToken<Result<User>>(){}.getType();
-     *   Result<User> userResult = fromJson(json,userType);
-     *   User user = userResult.data;
+     * eg.
+     * Type userType = new TypeToken<Result<User>>(){}.getType();
+     * Result<User> userResult = fromJson(json,userType);
+     * User user = userResult.data;
+     * <p>
+     * Type userListType = new TypeToken<Result<List<User>>>(){}.getType();
+     * Result<List<User>> userListResult = fromJson(json,userListType);
+     * List<User> users = userListResult.data;
      *
-     *   Type userListType = new TypeToken<Result<List<User>>>(){}.getType();
-     *   Result<List<User>> userListResult = fromJson(json,userListType);
-     *   List<User> users = userListResult.data;
      * @param json
      * @param type
      * @param <T>
@@ -70,11 +72,12 @@ public class GsonUtil {
 
     /**
      * 基本数据类型的生成
-     *  String jsonNumber = gson.toJson(100);       // 100
-     *  String jsonBoolean = gson.toJson(false);    // false
-     *  String jsonString = gson.toJson("String"); //"String"
-     *   User user = new User("怪盗kidou",24);
-     *   String jsonObject = gson.toJson(user); // {"name":"怪盗kidou","age":24}POJO类的解析
+     * String jsonNumber = gson.toJson(100);       // 100
+     * String jsonBoolean = gson.toJson(false);    // false
+     * String jsonString = gson.toJson("String"); //"String"
+     * User user = new User("怪盗kidou",24);
+     * String jsonObject = gson.toJson(user); // {"name":"怪盗kidou","age":24}POJO类的解析
+     *
      * @param object
      * @return
      */
@@ -84,6 +87,7 @@ public class GsonUtil {
 
     /**
      * string转换成JsonElement
+     *
      * @param jsonString
      * @return
      */
@@ -102,6 +106,7 @@ public class GsonUtil {
 
     /**
      * Java原始类型的JsonElement 转换成String
+     *
      * @param jsonElement
      * @return
      */
@@ -146,27 +151,29 @@ public class GsonUtil {
 
     /**
      * 获取JsonObject中的JsonObject
+     *
      * @param jsonObject 待取值的JsonObject
      * @param name       目标在JsonObject中的键值
      * @return
      */
-    public static JsonObject getJsonObject(JsonObject jsonObject, String name){
-        if(!jsonObject.isJsonNull()&& jsonObject.has(name)){
+    public static JsonObject getJsonObject(JsonObject jsonObject, String name) {
+        if (!jsonObject.isJsonNull() && jsonObject.has(name)) {
 
         }
-        JsonObject result =jsonObject.get(name).getAsJsonObject();
+        JsonObject result = jsonObject.get(name).getAsJsonObject();
         return null;
     }
 
 
     /**
      * 获取JsonObject中的JsonArray
+     *
      * @param jsonObject 待取值的JsonObject
      * @param name       目标在JsonObject中的键值
      * @return
      */
-    public static JsonArray getJsonArray(JsonObject jsonObject, String name){
-        if(!jsonObject.isJsonNull()&& jsonObject.has(name)){
+    public static JsonArray getJsonArray(JsonObject jsonObject, String name) {
+        if (!jsonObject.isJsonNull() && jsonObject.has(name)) {
             return jsonObject.get(name).getAsJsonArray();
         }
         return null;
@@ -174,12 +181,13 @@ public class GsonUtil {
 
     /**
      * 获取JsonObject中的Boolean
+     *
      * @param jsonObject 待取值的JsonObject
      * @param name       目标在JsonObject中的键值
      * @return
      */
-    public static Boolean getBoolean(JsonObject jsonObject, String name){
-        if(!jsonObject.isJsonNull()&& jsonObject.has(name)){
+    public static Boolean getBoolean(JsonObject jsonObject, String name) {
+        if (!jsonObject.isJsonNull() && jsonObject.has(name)) {
             return jsonObject.get(name).getAsBoolean();
         }
         return false;
@@ -187,12 +195,13 @@ public class GsonUtil {
 
     /**
      * 获取JsonObject中的Long
+     *
      * @param jsonObject 待取值的JsonObject
      * @param name       目标在JsonObject中的键值
      * @return
      */
-    public static Long getLong(JsonObject jsonObject, String name){
-        if(!jsonObject.isJsonNull()&& jsonObject.has(name)){
+    public static Long getLong(JsonObject jsonObject, String name) {
+        if (!jsonObject.isJsonNull() && jsonObject.has(name)) {
             return jsonObject.get(name).getAsLong();
         }
         return Long.valueOf(0);
@@ -200,12 +209,13 @@ public class GsonUtil {
 
     /**
      * 获取JsonObject中的String
+     *
      * @param jsonObject 待取值的jsonObject
-     * @param name 目标在jsonObject中的键值
+     * @param name       目标在jsonObject中的键值
      * @return
      */
-    public static String getString(JsonObject jsonObject, String name){
-        if(!jsonObject.isJsonNull()&& jsonObject.has(name)){
+    public static String getString(JsonObject jsonObject, String name) {
+        if (!jsonObject.isJsonNull() && jsonObject.has(name)) {
             return jsonObject.get(name).getAsString();
         }
         return null;
@@ -213,12 +223,13 @@ public class GsonUtil {
 
     /**
      * 获取JsonObject中的Int
+     *
      * @param jsonObject 待取值的jsonObject
-     * @param name 目标在jsonObject中的键值
+     * @param name       目标在jsonObject中的键值
      * @return
      */
-    public static int getInt(JsonObject jsonObject, String name){
-        if(!jsonObject.isJsonNull()&& jsonObject.has(name)){
+    public static int getInt(JsonObject jsonObject, String name) {
+        if (!jsonObject.isJsonNull() && jsonObject.has(name)) {
             return jsonObject.get(name).getAsInt();
         }
         return 0;

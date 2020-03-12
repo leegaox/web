@@ -1,0 +1,27 @@
+
+server:
+  port: 8050
+eureka:
+  instance:
+    #show host ip
+    prefer-ip-address: true
+  client:
+    service-url:
+      #define eureka server address
+      default-zone: http://localhost:8761/eureka
+
+spring:
+  application:
+    name: gateway-zuul
+
+zuul:
+  routes:
+    # define the 'first-service-provider'service route
+    # http://localhost:8080/person/1 ¡ú http://localhost:8050/service-proxy/person/1
+    eureka-service-provider: /service-proxy/**
+  ignored-services:
+#    eureka-service-provider
+    # ingore all services
+     "*"
+  # http://localhost:8080/person/1 ¡ú http://localhost:8050/prefix/service-proxy/person/1
+  prefix: /prefix

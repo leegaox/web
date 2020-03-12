@@ -1,0 +1,23 @@
+#Spring Boot 的全局配置文件的作用是对一些默认配置的配置值进行修改。
+#将 内嵌的Tomcat 默认端口设置为 8080 ，并将默认的访问路径从 “/” 修改为 “/lee”   http://localhost:8080/api/user/getInfo -> http://localhost:8080/lee/api/user/getInfo
+server:
+  port: 8080
+spring:
+  ## 数据源配置
+  datasource:
+    url: jdbc:mysql://10.16.33.51:3306/statistics_oa?characterEncoding=utf8&useSSL=false
+    username: root
+    password: Middle2020
+    driver-class-name: com.mysql.jdbc.Driver
+  #redis,端口可以不填，默认就是6379
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 10000
+  jpa:
+    hibernate:
+      ddl-auto: update
+mybatis:
+  configuration:
+    #开启驼峰识别
+    map-underscore-to-camel-case: true

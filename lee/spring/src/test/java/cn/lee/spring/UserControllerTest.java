@@ -15,8 +15,8 @@ public class UserControllerTest {
     private UserController userController;
 
     @Test
-    public void testUser(){
-        Result result =userController.getAllUser();
-        System.out.println("UserControllerTest: "+GsonUtil.toJson(result));
+    public void testUser() {
+        Result result = userController.getAllUser();
+        System.out.println("UserControllerTest: " + GsonUtil.toJson(result));
     }
 }

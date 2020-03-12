@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Result<T> implements Serializable {
     int key;
-    String message ="";
+    String message = "";
     T result;
 
     public int getKey() {

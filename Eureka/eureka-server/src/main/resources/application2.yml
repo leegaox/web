@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: lee-spring-cloud-eureka
+server:
+  port: 8761
+
+eureka:
+  instance: localhost
+  service-url:
+    default-zone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  client:
+    #是否到Eureka服务注册中心获取注册信息
+    fetch-registry: true
+    #是否将自己对信息注册到Eureka服务器中，默认为true
+    register-with-eureka: true

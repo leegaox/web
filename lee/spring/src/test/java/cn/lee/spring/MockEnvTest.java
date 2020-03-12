@@ -20,9 +20,9 @@ public class MockEnvTest {
     private MockMvc mvc;
 
     @Test
-    public void  testUser()throws  Exception{
-        ResultActions ra =mvc.perform(MockMvcRequestBuilders.get(new URI("/api/user/getInfo")));
-        MvcResult result =ra.andReturn();
+    public void testUser() throws Exception {
+        ResultActions ra = mvc.perform(MockMvcRequestBuilders.get(new URI("/api/user/getInfo")));
+        MvcResult result = ra.andReturn();
 
         System.out.println(result.getResponse().getContentAsString());
     }

@@ -1,0 +1,37 @@
+#Spring Boot 的全局配置文件的作用是对一些默认配置的配置值进行修改。
+#将 内嵌的Tomcat 默认端口设置为 8080 ，并将默认的访问路径从 “/” 修改为 “/lee”   http://localhost:8080/api/user/getInfo -> http://localhost:8080/lee/api/user/getInfo
+server:
+  port: 8080
+  #server.servlet.context-path=/lee
+
+#将我们的 JSP 文件重定向到 /WEB-INF/views/ 目录下
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  ## 数据源配置
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/springboot?characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  #redis,端口可以不填，默认就是6379
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 10000
+
+  #hibernate.ddl-auto，建表策略：
+  #update：每次运行程序，没有表会新建表，表内有数据不会清空，只会更新
+  #create：每次运行程序，没有表会新建表，表内有数据会清空
+  #create-drop：每次程序结束的时候会清空表
+  #validate：运行程序会校验数据与数据库的字段类型是否相同，不同会报错
+  jpa:
+    hibernate:
+      ddl-auto: update
+application:
+  yml:
+logging:
+  file:
+    path:

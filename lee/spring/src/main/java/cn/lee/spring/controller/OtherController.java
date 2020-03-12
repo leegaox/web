@@ -14,16 +14,16 @@ public class OtherController {
     private static final Logger logger = LoggerFactory.getLogger(OtherController.class);
 
     @PostMapping(value = "/login")
-    public Boolean Login(@RequestParam String userName){
-        System.out.println("userName:"+userName);
-        logger.info("userName:"+userName);
+    public Boolean Login(@RequestParam String userName) {
+        System.out.println("userName:" + userName);
+        logger.info("userName:" + userName);
         return true;
     }
 
     @RequestMapping("/upload")
     public Boolean upload(@RequestParam("file") MultipartFile file) throws IOException {
-        byte[] content =file.getBytes();
-        logger.info("upload: "+content);
+        byte[] content = file.getBytes();
+        logger.info("upload: " + content);
         return true;
     }
 

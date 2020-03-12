@@ -1,0 +1,21 @@
+
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      #配置中心中的配置文件的profile
+      #config-server  ： application-dev.yml
+      profile: dev
+      # config center address
+      uri: http://localhost:8888/
+server:
+  port: 8801
+management:
+  endpoint:
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
