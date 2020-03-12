@@ -10,7 +10,7 @@
  
  
  ### 接口
-  1. 获取软件列表前端展示： http://localhost:8080/api/software/getAll
+  1. 获取软件列表前端展示： http://localhost:8080/api/software/getAll   
   2. 前端提交问卷填写信息：http://localhost:8080/api/record/commit
   3. 获取软件使用情况数据：http://localhost:8080/api/statistics/pullSoft
 
