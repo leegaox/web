@@ -1,14 +1,29 @@
 spring:
   application:
-    name: lee-spring-cloud-eureka
+    name: eureka-server-center
 server:
   port: 8761
 
 eureka:
   instance:
+#    prefer-ip-address: true
+#    ip-address: 122.51.236.84
+#    hostname: ${eureka.instance.ip-address}
     hostname: localhost
+    #在注册中心页面显示的微服务名。
+    instance-id: ${spring.application.name}:${server.port}
   service-url:
-    default-zone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#    defaultZone: http://eureka-server-center:${server.port}/eureka/
+    defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#    defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
   client:
-    fetch-registry: true
-    register-with-eureka: true
+    # 因为这是一个单点的EurekaServer，不需要同步其它EurekaServer节点的数据，故设为false
+    fetch-registry: false
+    # 设置是否将自己作为客户端注册到注册中心（缺省true）
+    # 这里为不需要（查看@EnableEurekaServer注解的源码，会发现它间接用到了@EnableDiscoveryClient）
+    register-with-eureka: false
+  server:
+    #是否开启自我保护模式，默认为true。
+    enable-self-preservation: true
+    #续期时间，即扫描失效服务的间隔时间（缺省为60*1000ms）
+    eviction-interval-timer-in-ms: 10000

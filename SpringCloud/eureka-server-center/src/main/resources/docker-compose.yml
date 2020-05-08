@@ -1,0 +1,17 @@
+version: '2' # 表示该 Docker-Compose 文件使用的是 Version 2 file
+services:
+  eureka-server-center:  # 指定服务名称
+    restart: always
+    build: ./eureka-server-center/  # 指定 Dockerfile 所在路径
+    ports:    # 指定端口映射
+      - "8761:8761"
+  eureka-service-provider:
+    restart: always
+    build: ./eureka-service-provider/
+    ports:
+      - "8081:8081"
+  eureka-service-invoker:
+    restart: always
+    build: ./eureka-service-invoker/
+    ports:
+      - "8082:8082"

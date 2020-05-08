@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>eureka-service-invoke</artifactId>
+    <artifactId>eureka-service-invoker</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>eureka-service-invoke</name>
+    <name>eureka-service-invoker</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -81,6 +81,18 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <!-- 指定该Main Class为全局的唯一入口 -->
+                    <mainClass>com.example.eureka.serviceinvoke.FirstFeignInvokerApplication</mainClass>
+                    <layout>ZIP</layout>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal><!--可以把依赖的包都打包到生成的Jar包中-->
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

@@ -1,7 +1,7 @@
 #Spring Boot 的全局配置文件的作用是对一些默认配置的配置值进行修改。
 #将 内嵌的Tomcat 默认端口设置为 8080 ，并将默认的访问路径从 “/” 修改为 “/lee”   http://localhost:8080/api/user/getInfo -> http://localhost:8080/lee/api/user/getInfo
 server:
-  port: 8080
+  port: 8888
   #server.servlet.context-path=/lee
 
 #将我们的 JSP 文件重定向到 /WEB-INF/views/ 目录下

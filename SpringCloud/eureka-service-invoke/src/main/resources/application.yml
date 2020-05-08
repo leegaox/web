@@ -1,16 +1,20 @@
 spring:
   application:
-    name: eureka-service-invoke
-
+    name: eureka-service-invoker
 server:
-  port: 9000
-
+  port: 8082
 eureka:
   instance:
-    hostname: localhost
+    instance-id: ${spring.application.name}:${server.port}
+    #172.19.0.3为docker中该服务镜像所运行的容器ip
+    hostname: 172.19.0.3
+    #在注册中心页面显示的微服务名。
+
   client:
     service-url:
-      default-zone: http://localhost:8761/eureka/
+      #      defaultZone: http://localhost:8761/eureka/
+      #172.19.0.3为docker中该服务镜像所运行的容器ip
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
 
 feign:
   hystrix:

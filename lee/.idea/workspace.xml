@@ -7,35 +7,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c1b4066-6104-4e8d-a61f-b746a42cf391" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/RestService_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/RestService_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/ServletInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring/src/main/webapp/WEB-INF/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring/src/main/webapp/WEB-INF/upload.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_9_0_27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/eureka-server-center/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/nacos-server/src/main/java/com/example/nacosserver/NacosConfigController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/nacos-server/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/rabbitmq/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/rabbitmq/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/rabbitmq/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/rabbitmq/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/rabbitmq/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/rabbitmq/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/rabbitmq/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/rabbitmq/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/rabbitmq/src/main/java/com/example/rabbitmq/Goods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/rabbitmq/src/main/java/com/example/rabbitmq/RabbitmqApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/rabbitmq/src/main/java/com/example/rabbitmq/direct/DirectConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/rabbitmq/src/main/java/com/example/rabbitmq/direct/DirectProduce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/rabbitmq/src/main/java/com/example/rabbitmq/direct/RabbitmqDirectConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/rabbitmq/src/main/java/com/example/rabbitmq/fanout/FanoutConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/rabbitmq/src/main/java/com/example/rabbitmq/fanout/FanoutConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/rabbitmq/src/main/java/com/example/rabbitmq/fanout/FanoutProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/rabbitmq/src/main/java/com/example/rabbitmq/topic/TopicConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/rabbitmq/src/main/java/com/example/rabbitmq/topic/TopicConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/rabbitmq/src/main/java/com/example/rabbitmq/topic/TopicProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/rabbitmq/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/rabbitmq/src/test/java/com/example/rabbitmq/RabbitmqApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learnnetty/src/main/java/com/example/learnnetty/LearnnettyApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learnnetty/src/main/java/com/example/learnnetty/daemon/DaemonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learnnetty/src/main/java/com/example/learnnetty/decoder/MyReplayingDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learnnetty/src/main/java/com/example/learnnetty/http/HttpClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learnnetty/src/main/java/com/example/learnnetty/http/HttpServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learnnetty/src/main/java/com/example/learnnetty/http/handler/HttpClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learnnetty/src/main/java/com/example/learnnetty/http/handler/HttpServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learnnetty/src/main/java/com/example/learnnetty/tcp/client/TcpClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learnnetty/src/main/java/com/example/learnnetty/tcp/handler/EchoClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learnnetty/src/main/java/com/example/learnnetty/tcp/handler/EchoHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learnnetty/src/main/java/com/example/learnnetty/tcp/handler/IotCarsServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learnnetty/src/main/java/com/example/learnnetty/tcp/handler/RouterServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learnnetty/src/main/java/com/example/learnnetty/tcp/handler/SharableClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learnnetty/src/main/java/com/example/learnnetty/tcp/handler/trace/ConcurrentPerformanceClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learnnetty/src/main/java/com/example/learnnetty/tcp/handler/trace/ConcurrentPerformanceServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learnnetty/src/main/java/com/example/learnnetty/tcp/handler/trace/ConcurrentPerformanceServerHandlerV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learnnetty/src/main/java/com/example/learnnetty/tcp/handler/trace/ServiceTraceProfileServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learnnetty/src/main/java/com/example/learnnetty/tcp/handler/trace/ServiceTraceServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learnnetty/src/main/java/com/example/learnnetty/tcp/handler/trace/TrafficShapingServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learnnetty/src/main/java/com/example/learnnetty/tcp/handler/trace/TrafficShappingClienHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learnnetty/src/main/java/com/example/learnnetty/tcp/server/TcpServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringCloud/eureka-server-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringCloud/eureka-server-center/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringCloud/eureka-server-center/src/main/resources/application-localhost.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringCloud/eureka-server-center/src/main/resources/application-localhost.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringCloud/eureka-server-center/src/main/resources/application-localhost2.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringCloud/eureka-server-center/src/main/resources/application-localhost2.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringCloud/eureka-server-center/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringCloud/eureka-server-center/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/controller/StudentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/mapper/StudentMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/cn/lee/spring/pojo/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/resources/application.yml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,9 +88,6 @@
     <expand />
     <select />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="lee" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -84,15 +108,12 @@
     <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" value="" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1T0SZs6HQZnyPOlGJUdIN45Tcou" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -123,18 +144,6 @@
       <recent name="D:\Gx\workspace\web\lee\spring\src\main\webapp\WEB-INF\views" />
       <recent name="D:\Gx\workspace\web\lee\spring\src\main\java\cn\lee\spring\util" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="MockEnvTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -341,10 +350,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserControllerTest" />
         <item itemvalue="Tomcat Server.upload.html" />
         <item itemvalue="Tomcat Server.form.html" />
         <item itemvalue="JUnit.MockTest" />
-        <item itemvalue="JUnit.UserControllerTest" />
         <item itemvalue="JUnit.MockEnvTest" />
       </list>
     </recent_temporary>
@@ -383,6 +392,14 @@
       <workItem from="1583735866945" duration="4554000" />
       <workItem from="1583802280415" duration="4377000" />
       <workItem from="1583830990742" duration="42000" />
+      <workItem from="1584353012981" duration="2570000" />
+      <workItem from="1584406973186" duration="1719000" />
+      <workItem from="1584433674545" duration="621000" />
+      <workItem from="1584684621088" duration="149000" />
+      <workItem from="1587868658151" duration="1838000" />
+      <workItem from="1588123814630" duration="2599000" />
+      <workItem from="1588129521738" duration="4000" />
+      <workItem from="1588129538786" duration="900000" />
     </task>
     <task id="LOCAL-00001" summary="模拟post 上传文件；熟悉单元测试web组件和业务组件">
       <created>1583463368960</created>
@@ -402,25 +419,66 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="模拟post 上传文件；熟悉单元测试web组件和业务组件" />
     <MESSAGE value="集成Swagger2" />
     <option name="LAST_COMMIT_MESSAGE" value="集成Swagger2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="535" y="206" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588127044395">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="535" y="206" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1588127044395" />
+    <state x="628" y="160" key="FileChooserDialogImpl" timestamp="1588129295351">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="628" y="160" key="FileChooserDialogImpl/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1588129295351" />
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1588129382529">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1588129382529" />
+    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1588129382529">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1588129382529" />
+    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1588129382529">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1588129382529" />
+    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1588129382529">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1588129382529" />
+    <state width="1493" height="117" key="GridCell.Tab.1.bottom" timestamp="1588129382525">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="117" key="GridCell.Tab.1.bottom/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1588129382525" />
+    <state width="1493" height="117" key="GridCell.Tab.1.center" timestamp="1588129382525">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="117" key="GridCell.Tab.1.center/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1588129382525" />
+    <state width="1493" height="117" key="GridCell.Tab.1.left" timestamp="1588129382525">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="117" key="GridCell.Tab.1.left/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1588129382525" />
+    <state width="1493" height="117" key="GridCell.Tab.1.right" timestamp="1588129382525">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="117" key="GridCell.Tab.1.right/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1588129382525" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
