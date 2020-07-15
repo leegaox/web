@@ -18,8 +18,7 @@ public class NacosConfigController {
     @Value("${useLocalCache:false}")
     private boolean useLocalCache;
     @Value("${spring.rabbitmq2.port:0}")
-    private int port ;
-
+    private int port;
 
 
 }

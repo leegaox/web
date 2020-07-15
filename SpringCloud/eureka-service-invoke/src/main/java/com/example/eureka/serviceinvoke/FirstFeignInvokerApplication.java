@@ -19,15 +19,15 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class FirstFeignInvokerApplication {
 
-    public static void main(String[] args){
-        SpringApplication.run(FirstFeignInvokerApplication.class,args);
+    public static void main(String[] args) {
+        SpringApplication.run(FirstFeignInvokerApplication.class, args);
     }
 
     @Autowired
     PersonClient personClient;
 
     @GetMapping(value = "feignRouter")
-    public Person router(){
+    public Person router() {
         return personClient.findById(1);
     }
 }

@@ -13,7 +13,7 @@ public class FanoutProvider {
     @Autowired
     private RabbitTemplate rabbitTemplate;
 
-    public void sendFanoutQueue(){
+    public void sendFanoutQueue() {
         Goods goods1 = new Goods();
         goods1.setGoodsId(System.currentTimeMillis());
         goods1.setGoodsName("测试商品1");
@@ -22,6 +22,6 @@ public class FanoutProvider {
 
         System.out.println("FanoutProvider 已发送消息");
 
-        rabbitTemplate.convertAndSend(FanoutConfig.FANOUT_EXCHANGE, "",goods1);
+        rabbitTemplate.convertAndSend(FanoutConfig.FANOUT_EXCHANGE, "", goods1);
     }
 }

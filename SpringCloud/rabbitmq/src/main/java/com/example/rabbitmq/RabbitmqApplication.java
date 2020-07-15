@@ -27,18 +27,18 @@ public class RabbitmqApplication {
     }
 
     @GetMapping(value = "directTest")
-    public String directTest(){
+    public String directTest() {
         directProduce.sendDirectQueue();
         return "true";
     }
 
     @GetMapping(value = "topicTest")
-    public void topicTest(){
+    public void topicTest() {
         topicProvider.sendTopicQueue();
     }
 
     @GetMapping(value = "fanoutTest")
-    public void fanoutTest(){
+    public void fanoutTest() {
         fanoutProvider.sendFanoutQueue();
     }
 

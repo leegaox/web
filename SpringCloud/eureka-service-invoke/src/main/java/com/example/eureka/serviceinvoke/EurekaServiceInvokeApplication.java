@@ -22,7 +22,7 @@ public class EurekaServiceInvokeApplication {
     //开启负载均衡
     @LoadBalanced
     @Bean
-    public RestTemplate getRestTamplate(){
+    public RestTemplate getRestTamplate() {
         return new RestTemplate();
     }
 

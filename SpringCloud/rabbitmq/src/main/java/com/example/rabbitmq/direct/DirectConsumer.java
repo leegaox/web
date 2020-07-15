@@ -13,8 +13,8 @@ import static com.example.rabbitmq.direct.RabbitmqDirectConfig.DIRECT_QUEUE;
 public class DirectConsumer {
 
     @RabbitListener(queues = DIRECT_QUEUE)
-    public void receiveDirectQueue(Goods goods){
-        System.out.println("收到的消息为："+goods.toString());
+    public void receiveDirectQueue(Goods goods) {
+        System.out.println("收到的消息为：" + goods.toString());
     }
 
 

@@ -13,12 +13,12 @@ import static com.example.rabbitmq.topic.TopicConfig.TOPIC_QUEUE2;
 public class FanoutConsumer {
 
     @RabbitListener(queues = FANOUT_QUEUE1)
-    public void receiverFanout1(Goods goods){
-        System.out.println("receiverFanout1收到的消息为："+goods.toString());
+    public void receiverFanout1(Goods goods) {
+        System.out.println("receiverFanout1收到的消息为：" + goods.toString());
     }
 
     @RabbitListener(queues = FANOUT_QUEUE2)
-    public void receiverFanout2(Goods goods){
-        System.out.println("receiverFanout2收到的消息为："+goods.toString());
+    public void receiverFanout2(Goods goods) {
+        System.out.println("receiverFanout2收到的消息为：" + goods.toString());
     }
 }

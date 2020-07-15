@@ -6,7 +6,7 @@ server:
 eureka:
   instance:
     prefer-ip-address: true
-#    ip-address: 172.19.0.3
+    #    ip-address: 172.19.0.3
     instance-id: ${spring.application.name}:${server.port}
     #172.18.0.3为docker中该服务镜像所运行的容器ip
     hostname: 172.19.0.3
@@ -16,7 +16,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-#      defaultZone: http://localhost:8761/eureka/
+      #      defaultZone: http://localhost:8761/eureka/
       #172.19.0.3为docker中该服务镜像所运行的容器ip
       defaultZone: http://${eureka.instance.hostname}:8761/eureka/
 

@@ -21,7 +21,7 @@ public class ConfigClientApplication {
     }
 
     @GetMapping(value = "clientParam")
-    public String getParam(){
+    public String getParam() {
         return this.clientParam;
     }
 

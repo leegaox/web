@@ -10,13 +10,13 @@ import org.springframework.context.annotation.Configuration;
 public class RabbitmqDirectConfig {
 
     //点对点消息队列名称
-    public static final String DIRECT_QUEUE="direct.queue";
+    public static final String DIRECT_QUEUE = "direct.queue";
 
     //注入Queue类并创建消息队列
     @Bean
-    public Queue directQueue(){
+    public Queue directQueue() {
         //第一个参数是队列名字，第二个参数是指是否持久化
-        return new Queue(DIRECT_QUEUE,true);
+        return new Queue(DIRECT_QUEUE, true);
     }
 
 }

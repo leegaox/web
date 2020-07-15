@@ -28,45 +28,45 @@ import java.util.Map;
 public class Application {
 
 
-	public static void main(String[] args) {
-		start();
-	}
+    public static void main(String[] args) {
+        start();
+    }
 
-	public static void start() {
-		SpringApplication.run(Application.class);
-	}
+    public static void start() {
+        SpringApplication.run(Application.class);
+    }
 
-	@Bean
-	public LocalContainerEntityManagerFactoryBean entityManagerFactory(
-			EntityManagerFactoryBuilder factory, DataSource dataSource,
-			JpaProperties properties) {
-		Map<String, Object> jpaProperties = new HashMap<>();
-		jpaProperties.putAll(properties.getHibernateProperties(dataSource));
-		jpaProperties.put("hibernate.ejb.interceptor", hibernateInterceptor());
-		return factory.dataSource(dataSource).packages("io.github.knes1.todo.model")
-				.properties(jpaProperties).build();
-	}
+    @Bean
+    public LocalContainerEntityManagerFactoryBean entityManagerFactory(
+            EntityManagerFactoryBuilder factory, DataSource dataSource,
+            JpaProperties properties) {
+        Map<String, Object> jpaProperties = new HashMap<>();
+        jpaProperties.putAll(properties.getHibernateProperties(dataSource));
+        jpaProperties.put("hibernate.ejb.interceptor", hibernateInterceptor());
+        return factory.dataSource(dataSource).packages("io.github.knes1.todo.model")
+                .properties(jpaProperties).build();
+    }
 
-	@Bean
-	public HibernateStatisticsInterceptor hibernateInterceptor() {
-		return new HibernateStatisticsInterceptor();
-	}
+    @Bean
+    public HibernateStatisticsInterceptor hibernateInterceptor() {
+        return new HibernateStatisticsInterceptor();
+    }
 
-	@Configuration
-	public static class WebApplicationConfig extends WebMvcConfigurerAdapter {
+    @Configuration
+    public static class WebApplicationConfig extends WebMvcConfigurerAdapter {
 
-		@Autowired
-		RequestStatisticsInterceptor requestStatisticsInterceptor;
+        @Autowired
+        RequestStatisticsInterceptor requestStatisticsInterceptor;
 
-		@Bean
-		public RequestStatisticsInterceptor requestStatisticsInterceptor() {
-			return new RequestStatisticsInterceptor();
-		}
+        @Bean
+        public RequestStatisticsInterceptor requestStatisticsInterceptor() {
+            return new RequestStatisticsInterceptor();
+        }
 
-		@Override
-		public void addInterceptors(InterceptorRegistry registry) {
-			registry.addInterceptor(requestStatisticsInterceptor).addPathPatterns("/**");
-		}
-	}
+        @Override
+        public void addInterceptors(InterceptorRegistry registry) {
+            registry.addInterceptor(requestStatisticsInterceptor).addPathPatterns("/**");
+        }
+    }
 
 }

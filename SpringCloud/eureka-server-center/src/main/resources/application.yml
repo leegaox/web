@@ -1,21 +1,24 @@
 spring:
   application:
     name: eureka-server-center
+  messages:
+    basename: i18n/messages
+    encoding: UTF-8
 server:
   port: 8761
 
 eureka:
   instance:
-#    prefer-ip-address: true
-#    ip-address: 122.51.236.84
-#    hostname: ${eureka.instance.ip-address}
+    #    prefer-ip-address: true
+    #    ip-address: 122.51.236.84
+    #    hostname: ${eureka.instance.ip-address}
     hostname: localhost
     #在注册中心页面显示的微服务名。
     instance-id: ${spring.application.name}:${server.port}
   service-url:
-#    defaultZone: http://eureka-server-center:${server.port}/eureka/
+    #    defaultZone: http://eureka-server-center:${server.port}/eureka/
     defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-#    defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
+  #    defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
   client:
     # 因为这是一个单点的EurekaServer，不需要同步其它EurekaServer节点的数据，故设为false
     fetch-registry: false

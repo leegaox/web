@@ -15,12 +15,12 @@ public class DirectProduce {
     private RabbitTemplate rabbitTemplate;
 
 
-    public void sendDirectQueue(){
+    public void sendDirectQueue() {
         Goods goods = new Goods();
         goods.setGoodsId(111L);
         goods.setGoodsName("测试商品");
         goods.setGoodsIntroduce("这是一个测试商品");
         goods.setGoodsPrice(98.6);
-        rabbitTemplate.convertAndSend(RabbitmqDirectConfig.DIRECT_QUEUE,goods);
+        rabbitTemplate.convertAndSend(RabbitmqDirectConfig.DIRECT_QUEUE, goods);
     }
 }

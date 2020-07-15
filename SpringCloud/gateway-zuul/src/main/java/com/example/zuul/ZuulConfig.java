@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 public class ZuulConfig {
 
     @Bean
-    public AuthorizedRequestFilter getAuthorizedRequestFilter(){
+    public AuthorizedRequestFilter getAuthorizedRequestFilter() {
         return new AuthorizedRequestFilter();
     }
 }

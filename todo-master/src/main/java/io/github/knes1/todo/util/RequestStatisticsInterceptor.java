@@ -15,43 +15,43 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class RequestStatisticsInterceptor implements AsyncHandlerInterceptor {
 
-	private ThreadLocal<Long> time = new ThreadLocal<>();
+    private ThreadLocal<Long> time = new ThreadLocal<>();
 
-	private static final Logger log = LoggerFactory.getLogger(RequestStatisticsInterceptor.class);
+    private static final Logger log = LoggerFactory.getLogger(RequestStatisticsInterceptor.class);
 
-	@Autowired
-	private HibernateStatisticsInterceptor statisticsInterceptor;
+    @Autowired
+    private HibernateStatisticsInterceptor statisticsInterceptor;
 
-	@Override
-	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-		time.set(System.currentTimeMillis());
-		statisticsInterceptor.startCounter();
-		return true;
-	}
+    @Override
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        time.set(System.currentTimeMillis());
+        statisticsInterceptor.startCounter();
+        return true;
+    }
 
-	@Override
-	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
-		Long queryCount = statisticsInterceptor.getQueryCount();
-		if (modelAndView != null) {
-			modelAndView.addObject("_queryCount", queryCount);
-		}
-	}
+    @Override
+    public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
+        Long queryCount = statisticsInterceptor.getQueryCount();
+        if (modelAndView != null) {
+            modelAndView.addObject("_queryCount", queryCount);
+        }
+    }
 
-	@Override
-	public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
-		long duration = System.currentTimeMillis() - time.get();
-		Long queryCount = statisticsInterceptor.getQueryCount();
-		statisticsInterceptor.clearCounter();
-		time.remove();
-		log.info("[Time: {} ms] [Queries: {}] {} {}", duration, queryCount, request.getMethod(), request.getRequestURI());
-	}
+    @Override
+    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
+        long duration = System.currentTimeMillis() - time.get();
+        Long queryCount = statisticsInterceptor.getQueryCount();
+        statisticsInterceptor.clearCounter();
+        time.remove();
+        log.info("[Time: {} ms] [Queries: {}] {} {}", duration, queryCount, request.getMethod(), request.getRequestURI());
+    }
 
-	@Override
-	public void afterConcurrentHandlingStarted(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-		//concurrent handling cannot be supported here
-		statisticsInterceptor.clearCounter();
-		time.remove();
-	}
+    @Override
+    public void afterConcurrentHandlingStarted(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        //concurrent handling cannot be supported here
+        statisticsInterceptor.clearCounter();
+        time.remove();
+    }
 }
 
 
